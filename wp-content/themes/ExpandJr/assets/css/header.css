@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 140px ;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.header_nav a{
+    color: #000000
+}
+
+.header_nav_menu{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+
+
+.header_nav_menu a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#pt-en-tdr{
+    display: none;
+}

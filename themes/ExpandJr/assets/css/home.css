@@ -1,0 +1,333 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+.homepage_main{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+
+}
+
+/******estilização seçao bem vindo**/
+.welcome{
+    background-color: #264248; 
+    color:#FFFFFF ;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome_btn{
+    width: 350px;
+    height: 64px;
+    left: 343px;
+    top: 187px;
+    background: #D9D9D9;
+    border-radius: 100px;
+}
+
+.welcomebtn_text{
+    color: black;
+    text-decoration: none;
+}
+
+/*********** estilização seçao serviços***/
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 73px 40px;
+    gap: 30px;
+    width: initial;
+    height: 868px;
+    background: #FFFFFF;
+
+}
+
+.services_content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 73px 40px;
+    gap: 44px;
+    height: 710px;
+    
+}
+
+/*.service_type{
+    width: 500px;
+    height:600px;
+}*/
+
+.service_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 30px;
+    
+} 
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 10px;
+
+}
+
+.service_img{
+    width: 150px;
+    height: 150px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+.service_description{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dividing_line{
+    width: 600px;
+    height: 0px;
+    border: 2px solid #000000;
+    transform: rotate(-90deg);
+    display: flex;
+    align-self: center;
+    
+}
+
+
+/***** estilizaçao seção Resultados *****/
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 40px 0px;
+    gap: 30px;
+    background-color:#4FA3A5;
+    height: 400px;
+    
+}
+
+.results_numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 280px;
+    height: 310px;
+}
+
+.result_image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #D9D9D9;
+}
+
+.mySlides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/***** estilização seção cases ****/
+.cases{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px 20px 40px 0px;
+gap: 30px;
+height: 488px;
+background: #FFFFFF;
+}
+
+/**** estilização seção Apoiadores *****/
+.supporters{
+background-color:#4FA3A5;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px 0px 0px;
+gap: 30px;
+height: 364px;
+}
+
+/*************************************************************************************/
+/* Slideshow container */
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .testimony-text{
+    color: #4FA3A5;
+  }
+
+  .cases-img{
+    background-color: #717171;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #4FA3A5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/************************************************************
+.slider{
+    width:800px;
+    height:350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 350px;
+    height: 350px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+   
+}
+
+.slide{
+    width: 250%;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-text{
+    width: 800px;
+    
+}
+
+/* slide de navegação manual
+
+.navigation-manual{
+    position: absolute;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border:2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: gray;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left:-80%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -160%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -320%;
+}
+*/

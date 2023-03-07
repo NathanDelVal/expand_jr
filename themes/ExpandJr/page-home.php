@@ -109,7 +109,76 @@ get_header();
 <!-- SEÇÃO CASES -->
 <section class="cases">
     <h1 class="title">Cases de Sucesso</h1>
- 
+
+
+    <div class="slider">
+        <div class="slides">
+            
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+            <div class="slide first">
+            <div class="slide1 slide-content">
+                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+                <img scr="url" class="cases-img">
+                <div class="cases-name">Nome do cliente1</div>
+            </div>
+            </div>
+
+            <div class="slide">
+            <div class="slide2 slide-content">
+                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+                <img scr="url" class="cases-img">
+                <div class="cases-name">Nome do cliente1</div>
+            </div>
+            </div>
+
+            <div class="slide">
+            <div class="slide3 slide-content">
+                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+                <img scr="url" class="cases-img">
+                <div class="cases-name">Nome do cliente1</div>
+            </div>
+            </div>
+
+            <div class="slide">
+            <div class="slide4 slide-content">
+                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+                <img scr="url" class="cases-img">
+                <div class="cases-name">Nome do cliente1</div>
+            </div>
+            </div>
+
+            
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(+1)">&#10095;</button>
+    
+        </div>
+    
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
@@ -138,6 +207,8 @@ get_header();
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div> 
+
+-->
  <!-- inicio do slider
     <div class="slider">
         <div class="slides">

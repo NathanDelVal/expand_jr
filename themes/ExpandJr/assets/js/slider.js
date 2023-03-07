@@ -1,4 +1,33 @@
+let count=1;
+document.getElementById("radio1").checked = true;
 
+
+
+setInterval(function(){
+  nextSlide();
+},4000)
+
+function nextSlide(){
+  count++;
+  if(count >4){
+    count=1;
+  }
+
+  document.getElementById("radio"+count).checked = true;
+}
+
+var slideIndex=1;
+
+function plusSlides(n) {
+  nextSlide(slideIndex += n);
+}
+
+
+
+
+
+
+/*
 var slideIndex = 1;
   
 showSlides(slideIndex);
@@ -29,4 +58,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   
-}
+}*/

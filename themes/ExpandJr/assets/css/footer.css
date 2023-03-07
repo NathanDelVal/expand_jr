@@ -1,0 +1,118 @@
+footer {
+    color: #E6E8F4;
+    font-family: 'Barlow';
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    background-color: #999999;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px auto;
+    align-content: center;
+    height: 499px;
+    gap: 60px;
+}
+
+.copyright {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+
+.frames {
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.frame,
+.newsletter {
+    max-width: 326px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+p.title {
+    white-space: nowrap;
+    width: auto;
+}
+
+.emailInput {
+    width: 300px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #E1E1E1;
+}
+
+button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background-color: #AAAAAA;
+    border-style: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.a {
+    gap: 30px;
+}
+
+.b {
+    gap: 15px;
+    line-height: 1.5;
+}
+
+.c {
+    text-align: center;
+    gap: 15px;
+}
+
+.d {
+    gap: 60px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#end {
+    height: 157.6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}

@@ -20,7 +20,6 @@ input:not([type=checkbox]):not([type=radio]) {
     appearance: none;
 }
 
-input:not([type=checkbox]):not([type=radio]):focus {
+input:focus {
     outline: none;
 }
-

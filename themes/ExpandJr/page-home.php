@@ -67,7 +67,7 @@ get_header();
                         </div>
 
 
-                        <div class="LE_service service">
+<!--                         <div class="LE_service service">
                             <img class="LE_image service_img">
                             <p class="LE_description service_description"> Planejamento Logístico </p>
                         </div>
@@ -78,7 +78,7 @@ get_header();
                             <p class="LE_description service_description"> Prospecção Internacional </p>
                         </div>
 
-
+ -->
 
 
                     </div>
@@ -90,7 +90,7 @@ get_header();
 </section>
    
 <!--SEÇAO RESULTADOS-->
-<section class="results">
+<section class="outcome">
     <h1 class="title_sections">Resultados</h1>
 
 

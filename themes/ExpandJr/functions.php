@@ -6,7 +6,6 @@ define('IMAGES_DIR', get_template_directory_uri() . '/assets/images');
 define('JS_DIR', get_template_directory_uri() . '/assets/js');
 define('INC_DIR', ROOT_DIR . '/includes');
 define('INCLUDES_DIR', ROOT_DIR . '/includes');
-define('SCRIPTS_DIR', get_template_directory_uri() . '/assets/js');
 
 
 // Includes

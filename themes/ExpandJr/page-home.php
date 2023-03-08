@@ -2,6 +2,7 @@
 get_header();
 ?>
 
+
 <div class="homepage_main">
 <!-- SEÇAO SEJA BEM VINDO -->
 <section class="welcome">
@@ -12,14 +13,16 @@ get_header();
     </div>
 </section>
 
+
 <!--SEÇAO SERVIÇOS-->
 <section class="services">
-    <h1 class="title">Nossos Serviços</h1>
+    <h1 class="title_sections">Nossos Serviços</h1>
     <div class="services_content">        
             <!--SUBSEÇAO PESSOA FÍSICA-->
             <section class="legal_person service_type">
                 <div class="LP_content service_content">
-                     <h1 class="title"> Para Você </h1>
+                     <h1 class="title_sections"> Para Você </h1>
+
 
                      <div class="LP_services">
                         <div class="LP_service service">
@@ -27,23 +30,29 @@ get_header();
                             <p class="LP_description service_description"> Dupla Cidadania Portuguesa </p>
                         </div>
 
+
                         <div class="LP_service service">
                             <img class="LP_image service_img">
                             <p class="LP_description service_description"> Assessoria para Emissão de Passaporte Brasileiro </p>
                         </div>
 
+
                      </div>
 
-                </div>         
+
+                </div>        
             </section>
 
-             <div class="dividing_line">     
-             </div> 
+
+             <div class="dividing_line">    
+             </div>
+
 
             <!--SUBSEÇAO PESSOA JURIDICA-->
             <section class="legal_entity service_type">
                 <div class="LE_content service_content" >
-                    <h1 class="title"> Para Sua Empresa </h1>
+                    <h1 class="title_sections"> Para Sua Empresa </h1>
+
 
                     <div class="LE_services">
                         <div class="LE_service service">
@@ -51,15 +60,18 @@ get_header();
                             <p class="LE_description service_description"> Análise Burocrática </p>
                         </div>
 
+
                         <div class="LE_service service">
                             <img class="LE_image service_img">
                             <p class="LE_description service_description"> Estudo e Análise do Mercado </p>
                         </div>
 
+
                         <div class="LE_service service">
                             <img class="LE_image service_img">
                             <p class="LE_description service_description"> Planejamento Logístico </p>
                         </div>
+
 
                         <div class="LE_service service">
                             <img class="LE_image service_img">
@@ -67,16 +79,20 @@ get_header();
                         </div>
 
 
+
+
                     </div>
+
 
                 </div>
             </section>
     </div>
 </section>
-    
+   
 <!--SEÇAO RESULTADOS-->
 <section class="results">
-    <h1 class="title">Resultados</h1>
+    <h1 class="title_sections">Resultados</h1>
+
 
     <div class="results_numbers">
         <div class="result">
@@ -85,17 +101,20 @@ get_header();
             <p class="result_description">XXXXXX</p>
         </div>
 
-        <div class="result">
-            <img class="result_image" src="url">
-            <p class="result_number">YY</p>
-            <p class="result_description">XXXXXX</p>
-        </div>
 
         <div class="result">
             <img class="result_image" src="url">
             <p class="result_number">YY</p>
             <p class="result_description">XXXXXX</p>
         </div>
+
+
+        <div class="result">
+            <img class="result_image" src="url">
+            <p class="result_number">YY</p>
+            <p class="result_description">XXXXXX</p>
+        </div>
+
 
         <div class="result">
             <img class="result_image" src="url">
@@ -103,183 +122,94 @@ get_header();
             <p class="result_description">XXXXXX</p>
         </div>
        
-    </div>   
+    </div>  
 </section>
+
 
 <!-- SEÇÃO CASES -->
 <section class="cases">
-    <h1 class="title">Cases de Sucesso</h1>
-
-
-    <div class="slider">
-        <div class="slides">
-            
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            
-            <div class="slide first">
-            <div class="slide1 slide-content">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente1</div>
-            </div>
-            </div>
-
-            <div class="slide">
-            <div class="slide2 slide-content">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente1</div>
-            </div>
-            </div>
-
-            <div class="slide">
-            <div class="slide3 slide-content">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente1</div>
-            </div>
-            </div>
-
-            <div class="slide">
-            <div class="slide4 slide-content">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente1</div>
-            </div>
-            </div>
-
-            
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-
-            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(+1)">&#10095;</button>
-    
-        </div>
-    
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-
-    </div>
+    <h1 class="title_sections">Cases de Sucesso</h1>
 
 
 
 
-
-
-    <!--
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <img scr="url" class="cases-img">
-            <div class="cases-name">Nome do cliente1</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <img scr="url" class="cases-img">
-            <div class="cases-name">Nome do cliente2</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <img scr="url" class="cases-img">
-            <div class="cases-name">Nome do cliente3</div>
-        </div>
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(+1)">&#10095;</button>
-    </div>
-
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div> 
-
--->
- <!-- inicio do slider
-    <div class="slider">
-        <div class="slides">
-            
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            
-            <div class="slide first">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente1</div>
-            </div>
-
-            <div class="slide">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente2</div>
-            </div>
-
-            <div class="slide">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente3</div>
-            </div>
-
-            <div class="slide">
-                <div class="testimony-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-                <img scr="url" class="cases-img">
-                <div class="cases-name">Nome do cliente4</div>
-            </div>
-
-            
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
      
-        </div>
-      
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
+    <div class="slideshow-container">
+            <?php
+            $args = array( 'posts_per_page' => 4,
+            'category_name' => 'cases' );
 
+
+
+
+            $cpt_query = new WP_Query($args);
+
+
+
+
+            if ($cpt_query -> have_posts()) :
+                while ($cpt_query -> have_posts()) : $cpt_query -> the_post();?>
+                    <div class="slides fade">
+                        <div class="case_description"> <i>"<?php echo the_field('descricao_case'); ?> "</i></div>
+                        <div class="case_name_img">
+                        <img class="case_img" src="<?php echo the_field('imagem_cliente'); ?>">
+                            <div class="case_name"> <?php echo the_field('nome_cliente'); ?> </div>
+                           
+                        </div>
+                    </div>    
+            <?php endwhile;
+            endif;
+            ?>
+
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
--->
+   
+    <br>
+
+
+
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+
 
 </section>
+
+
+
 
 <!-- SEÇAO APOIADORES -->
 <section class="supporters">
-    <h1 class="title">Apoiadores</h1>
+    <h1 class="title_sections">Apoiadores</h1>
 
-    
-    
+
+   
 </section>
+
+
+
+
 
 
 
 
 </div>
 
+
 <?php
 get_footer();
 ?>
 
 
-<?php get_footer(); ?>
+
+

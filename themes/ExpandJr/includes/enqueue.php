@@ -18,7 +18,7 @@ function expandjr_style(){
 
     
     /* js */
-    wp_register_script('slider-cases', SCRIPTS_DIR .'/slider.js', [], '1.0.0', true);
+    wp_register_script('slider-cases', JS_DIR .'/slider.js', [], '1.0.0', true);
     wp_register_script('header_script', JS_DIR . '/header.js', [], '1.0.0', true);
 
     // Enqueue 
@@ -43,5 +43,6 @@ function expandjr_style(){
     
     /* js */
     wp_enqueue_script('header_script');
+    wp_enqueue_script('slider-cases');
 
 }

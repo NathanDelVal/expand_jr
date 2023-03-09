@@ -129,23 +129,13 @@ get_header();
 <!-- SEÇÃO CASES -->
 <section class="cases">
     <h1 class="title_sections">Cases de Sucesso</h1>
-
-
-
-
      
     <div class="slideshow-container">
             <?php
             $args = array( 'posts_per_page' => 4,
             'category_name' => 'cases' );
 
-
-
-
             $cpt_query = new WP_Query($args);
-
-
-
 
             if ($cpt_query -> have_posts()) :
                 while ($cpt_query -> have_posts()) : $cpt_query -> the_post();?>

@@ -90,36 +90,28 @@ get_header();
 </section>
    
 <!--SEÇAO RESULTADOS-->
-<section class="outcome">
-    <h1 class="title_sections">Resultados</h1>
-
-
-    <div class="results_numbers">
-        <div class="result">
-            <img class="result_image" src="url">
-            <p class="result_number">YY</p>
-            <p class="result_description">XXXXXX</p>
+<section class="outcomes">
+    <h1 class="subtitle">Resultados</h1>
+    <div class="outcomes_numbers">
+        <div class="outcome">
+            <img class="outcome_image" src="url">
+            <p class="outcome_number">YY</p>
+            <p class="outcome_description">XXXXXX</p>
         </div>
-
-
-        <div class="result">
-            <img class="result_image" src="url">
-            <p class="result_number">YY</p>
-            <p class="result_description">XXXXXX</p>
+        <div class="outcome">
+            <img class="outcome_image" src="url">
+            <p class="outcome_number">YY</p>
+            <p class="outcome_description">XXXXXX</p>
         </div>
-
-
-        <div class="result">
-            <img class="result_image" src="url">
-            <p class="result_number">YY</p>
-            <p class="result_description">XXXXXX</p>
+        <div class="outcome">
+            <img class="outcome_image" src="url">
+            <p class="outcome_number">YY</p>
+            <p class="outcome_description">XXXXXX</p>
         </div>
-
-
-        <div class="result">
-            <img class="result_image" src="url">
-            <p class="result_number">YY</p>
-            <p class="result_description">XXXXXX</p>
+        <div class="outcome">
+            <img class="outcome_image" src="url">
+            <p class="outcome_number">YY</p>
+            <p class="outcome_description">XXXXXX</p>
         </div>
        
     </div>  

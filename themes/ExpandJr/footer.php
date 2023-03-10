@@ -4,7 +4,7 @@
 /* Posts mais populares */
 $args = array(
     'post_type' => 'post',
-    'pots_per_page' => 3,
+    'posts_per_page' => 3,
     'meta_key' => 'post_views_count',
     'orderby' => 'meta_value_num',
     'order' => 'DESC'
@@ -54,17 +54,19 @@ $recents = new WP_Query($args);
             </div>
             <div class="frame a">
                 <p class="flashyText">Links</p>
-                <?php
-                wp_nav_menu(['menu' => 'links']);
-                ?>
+                <div>
+                    <?php
+                    wp_nav_menu(['menu' => 'links']);
+                    ?>
+                </div>
             </div>
         </div>
         <div class="frames">
-            <div class="frame c">
+            <div class="frame bot c">
                 <?php the_custom_logo(); ?>
                 <p>CNPJ: 11.111.111/0000-00</p>
             </div>
-            <div class="frame b newsletter">
+            <div class="frame bot newsletter">
                 <p>Cadastre-se em nossa newsletter!</p>
                 <input class="emailInput" type="email" name="email" placeholder="Digite seu e-mail">
                 <div>
@@ -75,15 +77,15 @@ $recents = new WP_Query($args);
                     <button type="submit">Cadastrar</button>
                 </div>
             </div>
-            <div class="frame c" id="end">
+            <div class="frame bot" id="end">
                 <div>
                     <p>Av. Exemplo, 111 - Niterói, Rio de Janeiro</p>
                     <p>Telefone: (21) 99999-9999</p>
                 </div>
                 <div class="social">
-                    <a href="/"><img src="<?php echo IMAGES_DIR . '/instagram.svg'?>" alt=""></a>
-                    <a href="/"><img src="<?php echo IMAGES_DIR . '/linkedin.svg'?>" alt=""></a>
-                    <a href="/"><img src="<?php echo IMAGES_DIR . '/email.svg'?>" alt=""></a>
+                    <?php
+                    wp_nav_menu(['menu' => 'social-media']);
+                    ?>
                 </div>
             </div>
         </div>

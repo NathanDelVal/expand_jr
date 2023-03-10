@@ -6,7 +6,9 @@ function expandjr_setup_theme(){
     register_nav_menus([
         'primary' => 'Primary',
         'links' => 'Menu de Links', 
-        'Whatsapp' => 'Ícone flutuante do whatsapp'
+        'Whatsapp' => 'Ícone flutuante do whatsapp',
+        'links' => 'Menu de Links',
+        'social-media' => 'Redes Sociais'
     ]);
 }
 

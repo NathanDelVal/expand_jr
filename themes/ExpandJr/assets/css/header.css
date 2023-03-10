@@ -39,3 +39,9 @@
 #pt-en-tdr{
     display: none;
 }
+
+.wpp-icon-float {
+    position:fixed;
+    top:50%;
+    right:20px;
+}

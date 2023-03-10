@@ -11,6 +11,7 @@ function expandjr_style(){
     wp_register_style('expandjr_header', STYLES_DIR . '/header.css', [], '1.0.0', false);
     wp_register_style('expandjr-home-style', STYLES_DIR . '/home.css', [], '1.0.0', false);
     wp_register_style('expandjr-slider1-style', STYLES_DIR . '/slider1.css', [], '1.0.0', false);
+    wp_register_style('expandjr-quem-somos-style', STYLES_DIR . '/page-quem-somos.css', [], '1.0.0', false);
     
     /* fonts */
     wp_register_style('expandjr-barlow-font', 'https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
@@ -32,6 +33,7 @@ function expandjr_style(){
     wp_enqueue_style('expandjr_header');
     wp_enqueue_style('expandjr-footer');
     wp_enqueue_style('expandjr-slider1-style');
+    wp_enqueue_style('expandjr-quem-somos-style');
     
     
     /* fonts */

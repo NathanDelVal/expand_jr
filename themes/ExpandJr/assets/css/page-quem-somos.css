@@ -1,0 +1,183 @@
+/*** HEADER PAG QUEM SOMOS**/
+.quem-somos-header{
+    color: #fff;
+    font-family: 'Barlow';
+    background-color: #999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height:300px;
+    max-height: 300px;
+    gap: 10px;
+}
+
+.qs-title{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.qs-subtitle{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/**SEÇAO 1 PAG QUEM SOMOS*/
+
+.quem-somos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    width: 80%;
+    margin-left: 150px;
+}
+.qs-secao1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 66px;
+    height: 371px;
+    font-family: 'Roboto';
+}
+
+.qs1_img{
+    width:583px;
+    height:371px;
+    background-color: #cac8c8;
+}
+
+.qs1-text-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: justify;
+    gap: 15px;
+}
+
+.qs1_title{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+}
+
+/**SEÇAO 2 PAG QUEM SOMOS*/
+
+.qs-secao2, .frame_qs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 75px;
+    font-family: 'Roboto';
+    text-align: justify;
+   
+}
+
+.frame-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    width: 586px;
+    height: 250px;
+}
+
+.qs2_img{
+    width: 250px;
+    height: 250px;
+    background: #E0E0E0;
+}
+
+/*****SEÇAO 3 QUEM SOMOS*/
+
+.qs-secao3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    font-family: 'Roboto';
+}
+
+.qs-sec3-tittle, .qs3_title{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 178.19%;
+    text-align: center;
+    color: #000000;
+}
+
+.qs3_text{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+.valor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+
+    width: 372px;
+    height: 280px;
+}
+
+.qs3_img{
+    width: 100px;
+    height: 100px;
+    background: #E0E0E0;
+}
+
+/********* SECAO 4 QUEM SOMOS ***/
+.qs-secao4, .qs-s4-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 66px;
+
+}
+
+.q-s4-text{
+    width: 596px;
+    height:327px;
+    font-family: 'Roboto';
+    text-align: justify;
+    
+}
+
+.qs4_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.qs4_img{
+    width: 583px;
+    height: 327px;
+    background: #F0F0F0;
+    margin: 20px;
+    border-color: transparent;
+}

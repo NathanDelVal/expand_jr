@@ -16,10 +16,10 @@
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         if (isset($_GET)) {
-            $categories = '';
+            $categories = [];
             foreach ($_GET as $key => $value) {
                 if (strpos($key, 'categoria') !== false) {
-                    $categories = $categories . $value . ',';
+                    array_push($categories, $value);
                 };
             }
 
@@ -28,11 +28,12 @@
                 'post_status' => 'publish', 
                 'posts_per_page' => 3, 
                 'paged' => $paged,
-                'category_name' => substr($categories, 0, strlen($categories) - 1)
+                'category__in' => $categories,
             ));
-            echo '<pre>';
-            print_r($categories->posts);
-            echo '</pre>';
+
+        //  echo '<pre>';
+        //  print_r($categories->posts);
+        //  echo '</pre>';
         } else {
             $categories = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'paged' => $paged));
         };
@@ -40,6 +41,11 @@
         if ($categories->have_posts()) {
             while ($categories->have_posts()) {
                 $categories->the_post();
+                if(isset($_GET['busca_titulo'])) {
+                    if(strpos(get_the_title(), $_GET['busca_titulo']) === false) {
+                        continue;
+                    } 
+                }
         ?>
                 <div class='blog-card'>
 
@@ -70,7 +76,7 @@
             <?php
             $counter = 0;
             foreach (get_categories() as $x) {
-                echo "<li>" . $x->name . " <input type='checkbox' value='" . $x->slug . "' name='categoria" . ++$counter . "'></li>";
+                echo "<li>" . $x->name . " <input type='checkbox' value='" . $x->cat_ID . "' name='categoria" . ++$counter . "'></li>";
             }
             ?>
         </ul>

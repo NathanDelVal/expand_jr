@@ -11,8 +11,6 @@ a {
 
 ul, ol {
     list-style-type: none;
-    display: flex;
-    align-items: center;
 }
 
 input:not([type=checkbox]):not([type=radio]) {

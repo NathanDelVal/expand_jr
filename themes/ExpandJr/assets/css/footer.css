@@ -9,6 +9,16 @@ footer {
     background-color: #999999;
 }
 
+.copyright {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+
+/* Principal */
 .principal {
     display: flex;
     flex-direction: column;
@@ -20,19 +30,15 @@ footer {
     gap: 60px;
 }
 
-.copyright {
-    background-color: black;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    height: 45px;
-    align-items: center;
-}
 
 .frames {
     display: flex;
     gap: 100px;
     justify-content: space-around;
+}
+
+.bot {
+    height: 127px;
 }
 
 .frame,
@@ -45,6 +51,9 @@ footer {
 .newsletter {
     font-family: 'Roboto';
     font-weight: 400;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
 }
 
 p.title {
@@ -101,18 +110,13 @@ button[type="submit"] {
 .social {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
 }
 
 #end {
-    height: 157.6px;
+    text-align: center;
     display: flex;
-    justify-content: space-around;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }

@@ -22,11 +22,9 @@ footer {
 .principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     box-sizing: border-box;
-    margin: 20px auto;
-    align-content: center;
-    height: 499px;
+    margin: 15px auto;
+    max-height: 499px;
     gap: 60px;
 }
 
@@ -34,11 +32,6 @@ footer {
 .frames {
     display: flex;
     gap: 100px;
-    justify-content: space-around;
-}
-
-.bot {
-    height: 127px;
 }
 
 .frame,
@@ -113,6 +106,11 @@ button[type="submit"] {
     gap: 25px;
     align-items: center;
     justify-content: center;
+}
+
+#menu-social-media {
+    display: flex;
+    flex-direction: row;
 }
 
 #end {

@@ -5,7 +5,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
     background-color: #999999;
 }
 
@@ -47,6 +46,10 @@ footer {
     display: flex;
     gap: 6px;
     flex-direction: column;
+}
+
+.agree {
+    font-size: 14px;
 }
 
 p.title {
@@ -111,6 +114,8 @@ button[type="submit"] {
 #menu-social-media {
     display: flex;
     flex-direction: row;
+    font-size: 40px;
+    gap: 35px;
 }
 
 #end {

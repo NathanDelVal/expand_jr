@@ -25,4 +25,4 @@
         
     </nav>
 </header>
-<?php wp_nav_menu(['menu' => 'wpp', 'container_class' => 'wpp-icon-float']);?>
+<?php wp_nav_menu(['menu' => 'whatsapp', 'container_class' => 'wpp-icon-float']);?>

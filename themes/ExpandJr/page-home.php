@@ -6,9 +6,9 @@ get_header();
 <div class="homepage_main">
 <!-- SEÇAO SEJA BEM VINDO -->
 <section class="welcome">
-    <div class="welcome_content">
+    <div class="wlc_content">
         <h1 class="title">Expanda seus horizontes</h1>
-        <h2 class="subtitle">através das nossas soluções internacionais de alto impacto.</h2>
+        <h2 id="wlc_desc">através das nossas soluções internacionais de alto impacto.</h2>
         <button class="welcome_btn"><a class="welcomebtn_text flashyText" href="<?php bloginfo('url');?>/contato/">Fale com um especialista</a></button>
     </div>
 </section>
@@ -108,26 +108,26 @@ get_header();
    
 <!--SEÇAO RESULTADOS-->
 <section class="outcomes">
-    <h1 class="subtitle">Resultados</h1>
+    <p class="subtitle">Resultados</p>
     <div class="outcomes_numbers">
         <div class="outcome">
-            <img class="outcome_image" src="url">
-            <p class="outcome_number">YY</p>
+            <img class="outcome_image" src="">
+            <div class="counter title" data-goal="100">0</div>
             <p class="outcome_description">XXXXXX</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="url">
-            <p class="outcome_number">YY</p>
+            <img class="outcome_image" src="/">
+            <div class="counter title" data-goal="100">0</div>
             <p class="outcome_description">XXXXXX</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="url">
-            <p class="outcome_number">YY</p>
+            <img class="outcome_image" src="/">
+            <div class="counter title" data-goal="100">0</div>
             <p class="outcome_description">XXXXXX</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="url">
-            <p class="outcome_number">YY</p>
+            <img class="outcome_image" src="/">
+            <div class="counter title" data-goal="100">0</div>
             <p class="outcome_description">XXXXXX</p>
         </div>
        

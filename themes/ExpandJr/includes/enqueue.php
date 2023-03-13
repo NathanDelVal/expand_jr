@@ -16,16 +16,15 @@ function expandjr_style(){
     /* fonts */
     wp_register_style('expandjr-barlow-font', 'https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
     wp_register_style('expandjr-roboto-font', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
     
     /* js */
     wp_register_script('slider-cases', JS_DIR .'/slider.js', [], '1.0.0', true);
     wp_register_script('header_script', JS_DIR . '/header.js', [], '1.0.0', true);
     wp_register_script('modal_script', JS_DIR . '/modal.js', [], '1.0.0', true);
+    wp_register_script('counter_script', JS_DIR . '/counter.js', [], '1.0.0', true);
+
 
     // Enqueue 
-    
-    
     /* style */
     wp_enqueue_style('expandjr-reset');
     wp_enqueue_style('expandjr-style');
@@ -36,17 +35,14 @@ function expandjr_style(){
     wp_enqueue_style('expandjr-slider1-style');
     wp_enqueue_style('expandjr-quem-somos-style');
     
-    
     /* fonts */
     wp_enqueue_style('expandjr-barlow-font');
     wp_enqueue_style('expandjr-roboto-font');
-
     wp_enqueue_style('google-fonts','https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap', [], null);
-    
     
     /* js */
     wp_enqueue_script('header_script');
     wp_enqueue_script('slider-cases');
     wp_enqueue_script('modal_script');
-
+    wp_enqueue_script('counter_script');
 }

@@ -15,75 +15,92 @@ get_header();
 
 
 <!--SEÇAO SERVIÇOS-->
-<section class="services">
+<section class="section_services">
+    <div id="fade" class="modal_hide">
+        <div id="modal" class="modal_hide">
+            <div id="modal_header">
+                <div id="space_empty"></div>
+                <div id="modal_image_box">
+                    <img src="" alt="" id="modal_image">
+                </div>
+                <button id="modal_close">X</button>
+            </div>
+            <div id="modal_content">
+                <div id="modal_title"></div>
+                <p id="modal_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cum in accusamus tenetur, dolorum ipsum asperiores atque dolor ab tempora eaque soluta non ea rem illum quam nobis porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas vitae inventore nesciunt praesentium velit fugiat quasi assumenda, quos unde quibusdam illo quaerat nam fuga expedita. Exercitationem assumenda perferendis esse nam.</p>
+            </div>
+            <button id="modal_button"> <a href="/">Diagnóstico Gratuito</a></button>
+
+        </div>
+    </div>
     <h1 class="title_sections">Nossos Serviços</h1>
-    <div class="services_content">        
+    <div class="section_services_container">        
             <!--SUBSEÇAO PESSOA FÍSICA-->
-            <section class="legal_person service_type">
-                <div class="LP_content service_content">
-                     <h1 class="title_sections"> Para Você </h1>
+            <section class="section_services_container_LP">
+                <div class="section_services_container_LP_content">
+                    <h1 class="title_sections"> Para Você </h1>
 
 
-                     <div class="LP_services">
-                        <div class="LP_service service">
-                            <img class="LP_image service_img">
-                            <p class="LP_description service_description"> Dupla Cidadania Portuguesa </p>
+                    <div class="section_services_container_LP_content_services">
+                        <div class="section_services_container_LP_content_services_type">
+                            <div class="LP_service_type_image_box">
+                                <img class="LP_service_type_image">
+                            </div>
+                            <p class="service_type_description" id="LP_1">  Dupla Cidadania Portuguesa </p>
                         </div>
 
-
-                        <div class="LP_service service">
-                            <img class="LP_image service_img">
-                            <p class="LP_description service_description"> Assessoria para Emissão de Passaporte Brasileiro </p>
+                        <div class="section_services_container_LP_content_services_type">
+                            <div class="LP_service_type_image_box">
+                                <img class="LP_service_type_image">
+                            </div>
+                            <p class="service_type_description" id="LP_2"> Assessoria para Emissão de Passaporte Brasileiro </p>
                         </div>
-
-
-                     </div>
-
-
+                    </div>
                 </div>        
             </section>
 
-
-             <div class="dividing_line">    
+             <div class="section_services_dividing_line">    
              </div>
 
-
             <!--SUBSEÇAO PESSOA JURIDICA-->
-            <section class="legal_entity service_type">
-                <div class="LE_content service_content" >
+            <section class="section_services_container_LE">
+                <div class="section_services_container_LE_content" >
                     <h1 class="title_sections"> Para Sua Empresa </h1>
 
 
-                    <div class="LE_services">
-                        <div class="LE_service service">
-                            <img class="LE_image service_img">
-                            <p class="LE_description service_description"> Análise Burocrática </p>
+                    <div class="section_services_container_LE_content_services">
+                        <div class="section_services_container_LE_content_services_1">
+                            <div class="section_services_container_LE_content_services_type">
+                                <div class="LE_service_type_image_box">
+                                    <img class="LE_service_type_image">
+                                </div>
+                                <p class="service_type_description" id="LE_1"> Análise Burocrática </p>
+                            </div>
+
+                            <div class="section_services_container_LE_content_services_type">
+                                <div class="LE_service_type_image_box">
+                                    <img class="LE_service_type_image">
+                                </div>
+                                <p class="service_type_description" id="LE_2"> Estudo e Análise do Mercado </p>
+                            </div>
                         </div>
 
+                        <div class="section_services_container_LE_content_services_2">
+                            <div class="section_services_container_LE_content_services_type">
+                                <div class="LE_service_type_image_box">
+                                    <img class="LE_service_type_image">
+                                </div>
+                                <p class="service_type_description" id="LE_3"> Planejamento Logístico </p>
+                            </div>
 
-                        <div class="LE_service service">
-                            <img class="LE_image service_img">
-                            <p class="LE_description service_description"> Estudo e Análise do Mercado </p>
+                            <div class="section_services_container_LE_content_services_type">
+                                <div class="LE_service_type_image_box">
+                                    <img class="LE_service_type_image">
+                                </div>
+                                <p class="service_type_description" id="LE_4"> Prospecção Internacional </p>
+                            </div>
                         </div>
-
-
-                        <div class="LE_service service">
-                            <img class="LE_image service_img">
-                            <p class="LE_description service_description"> Planejamento Logístico </p>
-                        </div>
-
-
-                        <div class="LE_service service">
-                            <img class="LE_image service_img">
-                            <p class="LE_description service_description"> Prospecção Internacional </p>
-                        </div>
-
-
-
-
                     </div>
-
-
                 </div>
             </section>
     </div>
@@ -121,23 +138,13 @@ get_header();
 <!-- SEÇÃO CASES -->
 <section class="cases">
     <h1 class="title_sections">Cases de Sucesso</h1>
-
-
-
-
      
     <div class="slideshow-container">
             <?php
             $args = array( 'posts_per_page' => 4,
             'category_name' => 'cases' );
 
-
-
-
             $cpt_query = new WP_Query($args);
-
-
-
 
             if ($cpt_query -> have_posts()) :
                 while ($cpt_query -> have_posts()) : $cpt_query -> the_post();?>

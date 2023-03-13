@@ -12,7 +12,6 @@
 section {
     display:grid;
     grid-template:auto / 3fr 1fr;
-    align-items:center;
     gap:20px;
     padding:0 5%;
 }

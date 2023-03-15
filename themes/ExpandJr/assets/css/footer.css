@@ -48,6 +48,10 @@ footer {
     flex-direction: column;
 }
 
+.agree {
+    font-size: 14px;
+}
+
 p.title {
     white-space: nowrap;
     width: auto;
@@ -110,6 +114,8 @@ button[type="submit"] {
 #menu-social-media {
     display: flex;
     flex-direction: row;
+    font-size: 40px;
+    gap: 35px;
 }
 
 #end {

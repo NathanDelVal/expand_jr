@@ -12,9 +12,10 @@ function expandjr_style(){
     wp_register_style('expandjr-home-style', STYLES_DIR . '/home.css', [], '1.0.0', false);
     wp_register_style('expandjr-slider1-style', STYLES_DIR . '/slider1.css', [], '1.0.0', false);
     wp_register_style('expandjr-quem-somos-style', STYLES_DIR . '/page-quem-somos.css', [], '1.0.0', false);
+    wp_register_style('expandjr-contato-style', STYLES_DIR . '/contato.css', [], '1.0.0', false);
     
     /* fonts */
-    wp_register_style('expandjr-barlow-font', 'https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
+    wp_register_style('expandjr-barlow-font', 'https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600;700&display=swap');
     wp_register_style('expandjr-roboto-font', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
     
@@ -22,6 +23,7 @@ function expandjr_style(){
     wp_register_script('slider-cases', JS_DIR .'/slider.js', [], '1.0.0', true);
     wp_register_script('header_script', JS_DIR . '/header.js', [], '1.0.0', true);
     wp_register_script('modal_script', JS_DIR . '/modal.js', [], '1.0.0', true);
+    wp_register_script('jornada_script', JS_DIR . '/jornada.js', [], '1.0.0', true);
 
     // Enqueue 
     
@@ -35,6 +37,7 @@ function expandjr_style(){
     wp_enqueue_style('expandjr-footer');
     wp_enqueue_style('expandjr-slider1-style');
     wp_enqueue_style('expandjr-quem-somos-style');
+    wp_enqueue_style('expandjr-contato-style');
     
     
     /* fonts */
@@ -48,5 +51,6 @@ function expandjr_style(){
     wp_enqueue_script('header_script');
     wp_enqueue_script('slider-cases');
     wp_enqueue_script('modal_script');
+    wp_enqueue_script('jornada_script');
 
 }

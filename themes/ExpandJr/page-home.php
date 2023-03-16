@@ -199,8 +199,35 @@ get_header();
 <section class="supporters">
     <h1 class="title_sections">Apoiadores</h1>
 
-
    
+    <div class="swiper-container" style="width:80vw; margin: 0px 10vw; overflow:hidden">
+        
+        
+            <?php    
+                $args2 = array( 'category_name' => 'apoiador' );
+
+                    $apoiadores = new WP_Query($args2);
+                    ?>   
+                
+                        <?php
+                        if ($apoiadores -> have_posts()) : ?>
+                    <div class="swiper-wrapper">  <?php              
+                        while ($apoiadores -> have_posts()) : $apoiadores -> the_post();?>                       
+                           <div class="swiper-slide" style="height: 200px; margin:10px" ><img class="supporter_img" alt=" <?php the_title();?>" src="<?php the_field('img_apoiador'); ?>" alt="img"></div>            
+                           <?php //echo '<pre>';print_r(the_field('img_apoiador'));echo '</pre>';?>
+                        <?php endwhile;
+                        endif;
+                        ?>
+                    <!-- </div> -->
+                    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+         
+    </div>
+
+
 </section>
 
 

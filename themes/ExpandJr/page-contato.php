@@ -69,19 +69,29 @@ get_header();
         </div>
     </section>
     <section class="contato_info_form">
+
+        <?php 
+            $informacao_contato_telefone = get_option('ej_contatos_tel');
+            $informacao_contato_email = get_option('ej_contatos_email');
+            $informacao_contato_endereco = get_option('ej_contatos_endereco') . ', ' . get_option('ej_contatos_numero') . ' - ' . get_option('ej_contatos_complemento') . ' - ' . get_option('ej_contatos_bairro') . ', ' . get_option('ej_contatos_cidade');
+            $informacao_contato_email_form = get_option('ej_contatos_email_form');
+        ?>
+
         <section class="contato_info">
             <h2>Informações de contato</h2>
-            <ul class="contato_info_list">
-                <li class="contato_info_list_item" id="contato_info_item_1">(21) 99192-3790</li>
-                <li class="contato_info_list_item" id="contato_info_item_2">comercial@expandjr.com</li>
-                <li class="contato_info_list_item" id="contato_info_item_3">Av. Pasteur, 250 - 5-A - Urca, Rio de Janeiro</li>
-            </ul>
-            <iframe width="400" height="300" id="contato_info_mapa" src="https://maps.google.com/maps?q=Av. Pasteur, 250 - 5-A - Urca, Rio de Janeiro&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <div class="contato_info_list">
+                <div class="contato_info_list_item" id="contato_info_item_1"><img src="<?php echo IMAGES_DIR . '/info_tel.png'; ?>" alt=""><?php echo $informacao_contato_telefone; ?></div>
+
+                <div class="contato_info_list_item" id="contato_info_item_2"><img src="<?php echo IMAGES_DIR . '/info_email.png'; ?>" alt=""><?php echo $informacao_contato_email; ?></div>
+
+                <div class="contato_info_list_item" id="contato_info_item_3"><img src="<?php echo IMAGES_DIR . '/info_local.png'; ?>" alt=""><?php echo $informacao_contato_endereco; ?></div>
+            </div>
+            <iframe width="400" height="300" id="contato_info_mapa" src="https://maps.google.com/maps?q=<?php echo $informacao_contato_endereco; ?>&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </section>
 
         <section class="contato_formulario">
                 <h3 class="contato_formulario_title">Formulário de Contato</h3>
-                <form action="mailto:<?php  ?>" method="post" class="contato_formulario_form">
+                <form action="mailto:<?php echo $informacao_contato_email_form; ?>" method="post" class="contato_formulario_form">
                     <label for="contato_input_nome">Nome:</label>
                     <input type="text" id="contato_input_nome" name="contato_input_nome">
                     <label for="contato_input_tel">Telefone:</label>

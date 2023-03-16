@@ -1,6 +1,7 @@
 <?php
 // Criando Query
-
+$informacao_contato_endereco = get_option('ej_contatos_endereco') . ', ' . get_option('ej_contatos_numero') . ' - ' . get_option('ej_contatos_complemento') . ' - ' . get_option('ej_contatos_bairro') . ', ' . get_option('ej_contatos_cidade');
+$informacao_contato_telefone = get_option('ej_contatos_tel');
 /* Posts mais populares */
 $args = array(
     'post_type' => 'post',
@@ -79,8 +80,8 @@ $recents = new WP_Query($args);
             </div>
             <div class="frame bot" id="end">
                 <div>
-                    <p>Av. Exemplo, 111 - Niterói, Rio de Janeiro</p>
-                    <p>Telefone: (21) 99999-9999</p>
+                    <p><?php echo $informacao_contato_endereco; ?></p>
+                    <p>Telefone: <?php echo $informacao_contato_telefone; ?></p>
                 </div>
                 <div class="social">
                     <?php

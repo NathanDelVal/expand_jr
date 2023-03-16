@@ -129,24 +129,29 @@
     flex-direction: column;  
 }
 
+.contato_info_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
 .contato_info_list_item{
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
 }
 
-#contato_info_item_1{
-    list-style-image: url(../images/info_tel.png);
+.contato_info_list_item img{
+    width: 50px;
+    height: 50px;
 }
 
-#contato_info_item_2{
-    list-style-image: url(../images/info_email.png);
-}
-
-#contato_info_item_3{
-    list-style-image: url(../images/info_local.png);
-}
 
 #contato_info_mapa{
     width: auto;
@@ -239,6 +244,7 @@
   #checkboxes label {
     display: block;
     font-weight: 400;
+    font-size: 20px;
   }
   
   #checkboxes label:hover {

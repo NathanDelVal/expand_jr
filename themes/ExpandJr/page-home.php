@@ -1,6 +1,11 @@
 <?php
 get_header();
 ?>
+<!--<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 
 <div class="homepage_main">
 <!-- SEÇAO SEJA BEM VINDO -->
@@ -159,7 +164,7 @@ get_header();
     <h1 class="title_sections">Apoiadores</h1>
 
    
-    <div class="swiper-container" style="width:80vw; margin: 0px 10vw; overflow:hidden">
+    <div class="swiper-container" style="width:80vw; margin: 0px 10vw;">
         
         
             <?php    
@@ -171,8 +176,9 @@ get_header();
                         <?php
                         if ($apoiadores -> have_posts()) : ?>
                     <div class="swiper-wrapper">  <?php              
-                        while ($apoiadores -> have_posts()) : $apoiadores -> the_post();?>                       
-                           <div class="swiper-slide" style="height: 200px;background:purple; margin:10px" ><img class="supporter_img" alt=" <?php the_title();?>" src="<?php echo the_field('img_apoiador'); ?>" alt="img"></div>            
+                         while ($apoiadores -> have_posts()) : $apoiadores -> the_post();?>                       
+                           <!-- <div class="swiper-slide" style="height: 200px; margin:10px; background:purple" ><img class="supporter_img" alt=" <?php //the_title();?>" src="<?php //echo the_field('img_apoiador');?>" alt="img"></div> -->
+                        <? echo '<pre>'; print_r($apoiadores->posts); echo '</pre>'; ?>  
                         <?php endwhile;
                         endif;
                         ?>

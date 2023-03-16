@@ -71,7 +71,7 @@ $recents = new WP_Query($args);
                 <input class="emailInput" type="email" name="email" placeholder="Digite seu e-mail">
                 <div>
                     <input class="checkbox" type="checkbox" name="agree" id="agree">
-                    <label for="agree" class="agree">Li e aceito as politicas de privacidade e termos de uso</label>
+                    <label for="agree">Li e aceito as politicas de privacidade e termos de uso</label>
                 </div>
                 <div class="a">
                     <button type="submit">Cadastrar</button>

@@ -102,7 +102,6 @@
     font-weight: 400;
 }
 
-#jornada_circle1,
 #jornada_circle2,
 #jornada_circle3,
 #jornada_circle4{
@@ -110,7 +109,6 @@
 }
 
 
-.paragraph1_hide,
 .paragraph2_hide,
 .paragraph3_hide,
 .paragraph4_hide{
@@ -123,7 +121,7 @@
     justify-content: center;
     align-items: start;
     padding: 0px 190px 190px 190px;
-    gap: 120px;
+    gap: 100px;
 }
 
 .contato_info{
@@ -204,3 +202,45 @@
     font-size: 20px;
     border: none;
 }
+
+
+
+
+
+
+
+.multiselect {
+    width: 100%;
+  }
+  
+  .selectBox {
+    position: relative;
+    width: 100%;
+  }
+  
+  .selectBox select {
+    width: 100%;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes {
+    display: none;
+    border: 1px solid;
+    width: 100%;
+  }
+  
+  #checkboxes label {
+    display: block;
+    font-weight: 400;
+  }
+  
+  #checkboxes label:hover {
+    background-color: #1e90ff;
+  }

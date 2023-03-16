@@ -81,7 +81,7 @@ get_header();
 
         <section class="contato_formulario">
                 <h3 class="contato_formulario_title">Formulário de Contato</h3>
-                <form action="" class="contato_formulario_form">
+                <form action="mailto:<?php  ?>" method="post" class="contato_formulario_form">
                     <label for="contato_input_nome">Nome:</label>
                     <input type="text" id="contato_input_nome" name="contato_input_nome">
                     <label for="contato_input_tel">Telefone:</label>
@@ -93,15 +93,28 @@ get_header();
                     <label for="contato_input_necessidade">Qual a sua principal necessidade?</label>
                     <input type="text" id="contato_input_necessidade" name="contato_input_necessidade">
                     <label for="form_contato_services">Algum dos nossos serviços te desperta mais interesse? </label>
-                    <select name="services" id="form_contato_services">
-                        <option value="">--Selecione uma opção--</option>
-                        <option value="cidadania_portuguesa">Dupla Cidadania Portuguesa</option>
-                        <option value="emissao_passaporte">Assessoria para Emissão de Passaporte Brasileiro</option>
-                        <option value="analise_burocratica">Análise Burocrática</option>
-                        <option value="analise_mercado">Estudo e Análise de Mercado</option>
-                        <option value="planejamento_logistico">Planejamento Logístico</option>
-                        <option value="prospeccao_internacional">Prospecção Internacional</option>
-                    </select>
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                            <select id="form_contato_services">
+                                <option value="">-- Selecione uma ou mais opções --</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                            <label for="one">
+                                <input type="checkbox" id="dupla_cid" /> Dupla Cidadania Portuguesa</label>
+                            <label for="two">
+                                <input type="checkbox" id="assessoria_passaporte" /> Assessoria para Emissão de Passaporte Brasileiro</label>
+                            <label for="three">
+                                <input type="checkbox" id="analise_bur" /> Análise Burocrática</label>
+                                <label for="one">
+                                <input type="checkbox" id="estudo_merc" /> Estudo e Análise de Mercado</label>
+                            <label for="two">
+                                <input type="checkbox" id="planejamento_log" /> Planejamento Logístico</label>
+                            <label for="three">
+                                <input type="checkbox" id="prospeccao_inter" /> Prospecção Internacional</label>
+                        </div>
+                    </div>
                     <label for="contato_form_como-chegou">Como chegou até nós?</label>
                     <select name="como-chegou" id="contato_form_como-chegou">
                         <option value="">--Selecione uma opção--</option>

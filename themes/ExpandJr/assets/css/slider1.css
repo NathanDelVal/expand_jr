@@ -3,7 +3,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  color: #0076c1;
+  color: black;
   font-size: 24px;
 }
 
@@ -34,7 +34,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #0076c1;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;

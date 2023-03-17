@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width:16rem;
+    height:10rem;
   }
 
   .swiper-slide img {
@@ -18,3 +20,9 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+.swiper-button-prev{
+  color: black;
+  left:-30px;
+}

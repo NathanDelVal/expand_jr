@@ -200,7 +200,7 @@ get_header();
     <h1 class="title_sections">Apoiadores</h1>
 
    
-    <div class="swiper-container" style="width:80vw; margin: 0px 10vw; overflow:hidden">
+    <div class="swiper-container" style="width:80vw; margin: 0px 10vw; overflow:hidden; position:relative">
         
         
             <?php    
@@ -211,19 +211,20 @@ get_header();
                 
                         <?php
                         if ($apoiadores -> have_posts()) : ?>
-                    <div class="swiper-wrapper">  <?php              
+                    <div class="swiper-wrapper" style="width:60%; height: 30%">  <?php              
                         while ($apoiadores -> have_posts()) : $apoiadores -> the_post();?>                       
                            <div class="swiper-slide" style="height: 200px; margin:10px" ><img class="supporter_img" alt=" <?php the_title();?>" src="<?php the_field('img_apoiador'); ?>" alt="img"></div>            
                            <?php //echo '<pre>';print_r(the_field('img_apoiador'));echo '</pre>';?>
                         <?php endwhile;
                         endif;
-                        ?>
+                        ?> 
+                    </div>
                     <!-- </div> -->
                     <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev" style=" color:black"></div>
+                    <div class="swiper-button-next" style="color:black; "></div>
          
     </div>
 

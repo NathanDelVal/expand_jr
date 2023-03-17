@@ -10,7 +10,6 @@ footer {
 
 .copyright {
     background-color: black;
-    width: 100%;
     display: flex;
     justify-content: center;
     height: 45px;
@@ -30,7 +29,7 @@ footer {
 
 .frames {
     display: flex;
-    gap: 100px;
+    gap: 200px;
 }
 
 .frame,
@@ -38,6 +37,7 @@ footer {
     max-width: 326px;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .newsletter {
@@ -46,6 +46,10 @@ footer {
     display: flex;
     gap: 6px;
     flex-direction: column;
+}
+
+.agree {
+    font-size: 14px;
 }
 
 p.title {
@@ -110,6 +114,8 @@ button[type="submit"] {
 #menu-social-media {
     display: flex;
     flex-direction: row;
+    font-size: 40px;
+    gap: 35px;
 }
 
 #end {

@@ -16,7 +16,7 @@
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         if (isset($_GET)) {
-            $categories = [];
+            $categories = [/*ID*/];
             foreach ($_GET as $key => $value) {
                 if (strpos($key, 'categoria') !== false) {
                     array_push($categories, $value);
@@ -35,7 +35,7 @@
         //  print_r($categories->posts);
         //  echo '</pre>';
         } else {
-            $categories = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'paged' => $paged));
+            $categories = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish','category_name' => 'blog', 'posts_per_page' => 3, 'paged' => $paged));
         };
 
         if ($categories->have_posts()) {

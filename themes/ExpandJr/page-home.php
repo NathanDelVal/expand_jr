@@ -218,7 +218,7 @@ get_header();
     <h1 class="title_sections">Apoiadores</h1>
 
    
-    <div class="swiper-container" style="width:80vw; margin: 0px 10vw; overflow:hidden">
+    <div class="swiper-container" style="position:relative; width:80vw; margin: 0px 10vw; overflow:hidden">
         
         
             <?php    

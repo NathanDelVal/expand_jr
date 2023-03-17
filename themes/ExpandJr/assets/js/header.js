@@ -13,5 +13,3 @@ function enmudatdr(){
 
 document.querySelector("#pt-en-tdr").addEventListener("click", ptmudatdr);
 document.querySelector("#en-pt-tdr").addEventListener("click", enmudatdr);
-
-

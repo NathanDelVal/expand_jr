@@ -4,6 +4,7 @@ function showPopup() {
   
   overlay.classList.add("show");
   popup.classList.add("show");
+
 }
 
 function closePopup() {
@@ -18,6 +19,8 @@ function closePopup() {
   }, 500);
 }
 
-setTimeout(showPopup, 2000);
+document.getElementById("closePopup").addEventListener("click", closePopup);
+
+setTimeout(showPopup, 500);
 
 document.getElementById("closePopup").addEventListener("click", closePopup);

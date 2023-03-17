@@ -22,7 +22,7 @@ function expandjr_style(){
     wp_register_script('header_script', JS_DIR . '/header.js', [], '1.0.0', true);
     wp_register_script('modal_script', JS_DIR . '/modal.js', [], '1.0.0', true);
     wp_register_script('counter_script', JS_DIR . '/counter.js', [], '1.0.0', true);
-
+    wp_register_script('popup_script', JS_DIR . '/popup.js', [], '1.0.0', true);
 
     // Enqueue 
     /* style */
@@ -45,4 +45,5 @@ function expandjr_style(){
     wp_enqueue_script('slider-cases');
     wp_enqueue_script('modal_script');
     wp_enqueue_script('counter_script');
+    wp_enqueue_script('popup_script');
 }

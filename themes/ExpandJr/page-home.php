@@ -2,17 +2,38 @@
 get_header();
 ?>
 
-
 <div class="homepage_main">
 <!-- SEÇAO SEJA BEM VINDO -->
 <section class="welcome">
+    <!-- pop-up -->
+    <div id="overlay"></div>
+    <div id="popup" class="popup">
+        <div class="popupContent">
+            <button id="closePopup">X</button>
+            <form class="newsl_popup">
+                <p id="cad_news">Cadastre-se na newsletter e fique por dentro de todas as novidades e promoções!</p>
+                <div id="newslForm">
+                    <div>
+                        <label for="name">Seu nome:</label>
+                        <input class="inputs" id="name" type="text">
+                    </div>
+                    <div>
+                        <label for="email">Seu e-mail:</label>
+                        <input class="inputs" id="email" type="email">
+                    </div>
+                </div>
+                <div id="newslButton">
+                    <button id="newslSubmit" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="wlc_content">
         <h1 class="title">Expanda seus horizontes</h1>
         <h2 id="wlc_desc">através das nossas soluções internacionais de alto impacto.</h2>
         <button class="welcome_btn"><a class="welcomebtn_text flashyText" href="<?php bloginfo('url');?>/contato/">Fale com um especialista</a></button>
     </div>
 </section>
-
 
 <!--SEÇAO SERVIÇOS-->
 <section class="section_services">
@@ -111,29 +132,37 @@ get_header();
     <p class="subtitle">Resultados</p>
     <div class="outcomes_numbers">
         <div class="outcome">
-            <img class="outcome_image" src="">
-            <div class="counter title" data-goal="100">0</div>
-            <p class="outcome_description">XXXXXX</p>
+            <img class="outcome_image">
+            <div class="counter title counter_num">6</div>
+            <p class="outcome_description">Anos no mercado</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="/">
-            <div class="counter title" data-goal="100">0</div>
-            <p class="outcome_description">XXXXXX</p>
+            <img class="outcome_image">
+            <div class="counter title">
+                <p>+ </p>
+                <p class="counter_num">70</p>
+            </div>
+            <p class="outcome_description">Projetos Realizados</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="/">
-            <div class="counter title" data-goal="100">0</div>
-            <p class="outcome_description">XXXXXX</p>
+            <img class="outcome_image">
+            <div class="counter title">
+                <p>+ </p>
+                <p class="counter_num">100</p>
+            </div>
+            <p class="outcome_description">Estudantes Impactados</p>
         </div>
         <div class="outcome">
-            <img class="outcome_image" src="/">
-            <div class="counter title" data-goal="100">0</div>
-            <p class="outcome_description">XXXXXX</p>
+            <img class="outcome_image">
+            <div class="counter title">
+                <p>+ </p>
+                <p class="counter_num">80</p>
+                <p> %</p>
+            </div>
+            <p class="outcome_description">Satisfação dos clientes</p>
         </div>
-       
     </div>  
 </section>
-
 
 <!-- SEÇÃO CASES -->
 <section class="cases">
@@ -184,9 +213,6 @@ get_header();
 
 </section>
 
-
-
-
 <!-- SEÇAO APOIADORES -->
 <section class="supporters">
     <h1 class="title_sections">Apoiadores</h1>
@@ -208,7 +234,3 @@ get_header();
 <?php
 get_footer();
 ?>
-
-
-
-

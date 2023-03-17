@@ -9,7 +9,7 @@
     text-align:center;
 }
 
-section {
+.section-blog {
     display:grid;
     grid-template:auto / 3fr 1fr;
     gap:20px;

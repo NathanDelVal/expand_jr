@@ -9,7 +9,7 @@
 <br>
 <br>
 
-<section>
+<section class="section-blog">
 
     <div>
 

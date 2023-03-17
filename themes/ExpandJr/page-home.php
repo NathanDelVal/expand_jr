@@ -6,8 +6,8 @@ get_header();
 <!-- SEÇAO SEJA BEM VINDO -->
 <section class="welcome">
     <!-- pop-up -->
-    <div id="overlay" style="display: none; pointer-events: none;"></div>
-    <div id="popup" class="popup" style="display: none;">
+    <div id="overlay"></div>
+    <div id="popup" class="popup">
         <div class="popupContent">
             <button id="closePopup">X</button>
             <form class="newsl_popup">

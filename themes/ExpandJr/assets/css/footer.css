@@ -10,7 +10,6 @@ footer {
 
 .copyright {
     background-color: black;
-    width: 100vw;
     display: flex;
     justify-content: center;
     height: 45px;
@@ -30,7 +29,7 @@ footer {
 
 .frames {
     display: flex;
-    gap: 100px;
+    gap: 200px;
 }
 
 .frame,
@@ -38,6 +37,7 @@ footer {
     max-width: 326px;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .newsletter {

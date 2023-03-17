@@ -62,12 +62,6 @@
     font-weight: 700;
 }
 
-.contato_jornada_container_stage_path{
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-
 .contato_jornada_container_stage_circle{
     width: 100px;
     height: 100px;
@@ -124,7 +118,6 @@
 .contato_info_form{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: start;
     padding: 0px 190px 190px 190px;
@@ -257,38 +250,3 @@
   #checkboxes label:hover {
     background-color: #1e90ff;
   }
-
-
-@media (max-width: 1000px){
-    .contato_jornada_container{
-        flex-direction: column;
-        width: 50%;
-        align-items: flex-end;
-    }
-
-
-    .contato_jornada_container_stage{
-        flex-direction: row;
-        text-align: right;
-    }
-
-
-    .contato_jornada_container_stage_path{
-        flex-direction: column;
-        gap: 11px;
-    }
-
-
-
-    .traco{
-        transform: rotate(90deg);
-    }
-
-    #traco_hide1{
-        display: none;
-    }
-
-    #traco_hide2{
-        display: none;
-    }
-}

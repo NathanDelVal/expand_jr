@@ -17,8 +17,8 @@ get_header();
         <div class="contato_jornada_container">
             <div class="contato_jornada_container_stage">
                 <h3 class="contato_jornada_container_stage_title">Primeiro Contato</h3>
-                <div class="contato_jornada_container_stage_path">
-                    <div class="traco" id="traco_hide1"></div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                <div class="traco" id="traco_hide1"></div>
                     <div class="contato_jornada_container_stage_circle">
                         <div class="contato_jornada_container_stage_intern_circle" id="jornada_circle1"></div>
                     </div>
@@ -28,7 +28,7 @@ get_header();
 
             <div class="contato_jornada_container_stage">
                 <h3 class="contato_jornada_container_stage_title">Diagnóstico</h3>
-                <div class="contato_jornada_container_stage_path">
+                <div style="display: flex; align-items: center; justify-content: center;">
                     <div class="traco"></div>
                     <div class="contato_jornada_container_stage_circle">
                         <div class="contato_jornada_container_stage_intern_circle" id="jornada_circle2"></div>
@@ -39,7 +39,7 @@ get_header();
 
             <div class="contato_jornada_container_stage">
                 <h3 class="contato_jornada_container_stage_title">Negociação</h3>
-                <div class="contato_jornada_container_stage_path">
+                <div style="display: flex; align-items: center; justify-content: center;">
                     <div class="traco"></div>
                     <div class="contato_jornada_container_stage_circle">
                         <div class="contato_jornada_container_stage_intern_circle" id="jornada_circle3"></div>
@@ -50,7 +50,7 @@ get_header();
 
             <div class="contato_jornada_container_stage">
                 <h3 class="contato_jornada_container_stage_title">Início do projeto</h3>
-                <div class="contato_jornada_container_stage_path">
+                <div style="display: flex; align-items: center; justify-content: center;">
                     <div class="traco"></div>
                     <div class="contato_jornada_container_stage_circle">
                         <div class="contato_jornada_container_stage_intern_circle" id="jornada_circle4"></div>

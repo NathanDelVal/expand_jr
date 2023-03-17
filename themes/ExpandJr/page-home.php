@@ -30,7 +30,7 @@ get_header();
     </div>
     <div class="wlc_content">
         <h1 class="title">Expanda seus horizontes</h1>
-        <h2 class="subtitle">através das nossas soluções internacionais de alto impacto.</h2>
+        <h2 id="wlc_desc">através das nossas soluções internacionais de alto impacto.</h2>
         <button class="welcome_btn"><a class="welcomebtn_text flashyText" href="<?php bloginfo('url');?>/contato/">Fale com um especialista</a></button>
     </div>
 </section>

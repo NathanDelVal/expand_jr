@@ -2,9 +2,6 @@
     font-family: 'Inter';
     margin: 0;
     padding: 0;
-    color:  #0076c1;
-
-
 }
 
 /* popup */
@@ -125,7 +122,7 @@
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -139,6 +136,8 @@
     background: #EBEBEB;
     border-radius: 100px;
     border-style: none;
+    position: relative;
+    top: 20px;
 }
 
 .welcomebtn_text {

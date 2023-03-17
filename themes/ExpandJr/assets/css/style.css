@@ -1,7 +1,3 @@
-* {
-    font-family: 'Barlow';
-}
-
 .title {
     font-size: 64px;
     font-weight: 700;
@@ -14,8 +10,4 @@
 .flashyText {
     font-size: 24px;
     font-weight: 700;
-}
-
-p {
-    font-weight: 500;
 }

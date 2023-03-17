@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*:not(i){
+    font-family: 'Barlow';
+}
+
 a {
     text-decoration: none;
     color: inherit;

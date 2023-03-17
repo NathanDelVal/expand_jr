@@ -36,7 +36,7 @@ get_header();
 </section>
 
 <!--SEÇAO SERVIÇOS-->
-<section class="section_services">
+<section class="section_services" id="servicos">
     <div id="fade" class="modal_hide">
         <div id="modal" class="modal_hide">
             <div id="modal_header">

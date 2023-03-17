@@ -14,37 +14,35 @@
     <div>
 
         <?php
+        $posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'category_name' => 'blog', 'posts_per_page' => 3, 'paged' => $paged));
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        if (isset($_GET)) {
-            $categories = [/*ID*/];
+        if (!empty($_GET)) {
+            $categories = [];
             foreach ($_GET as $key => $value) {
                 if (strpos($key, 'categoria') !== false) {
                     array_push($categories, $value);
                 };
             }
 
-            $categories = new WP_Query(array(
-                'post_type' => 'post', 
-                'post_status' => 'publish', 
-                'posts_per_page' => 3, 
+            $posts = new WP_Query(array(
+                'post_type' => 'post',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
                 'paged' => $paged,
                 'category__in' => $categories,
             ));
 
-        //  echo '<pre>';
-        //  print_r($categories->posts);
-        //  echo '</pre>';
-        } else {
-            $categories = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish','category_name' => 'blog', 'posts_per_page' => 3, 'paged' => $paged));
-        };
-
-        if ($categories->have_posts()) {
-            while ($categories->have_posts()) {
-                $categories->the_post();
-                if(isset($_GET['busca_titulo'])) {
-                    if(strpos(get_the_title(), $_GET['busca_titulo']) === false) {
+            //   echo '<pre>';
+            //   print_r($categories->posts);
+            //   echo '</pre>';
+        }
+        if ($posts->have_posts()) {
+            while ($posts->have_posts()) {
+                $posts->the_post();
+                if (isset($_GET['busca_titulo'])) {
+                    if (strpos(get_the_title(), $_GET['busca_titulo']) === false) {
                         continue;
-                    } 
+                    }
                 }
         ?>
                 <div class='blog-card'>
@@ -54,7 +52,18 @@
                     <div>
                         <div>
                             <h2><?php the_title(); ?></h2>
-                            <p><?php the_category(','); ?></p>
+                            <p><?php 
+                            $cats = "";
+                            foreach(get_the_category() as $x) {
+                                if($x->name == 'Blog') {
+                                    continue;
+                                } else {
+                                    $cats = $cats.$x->name.', ';
+                                }                            
+                            }
+                            $cats = substr($cats,0,strlen($cats) - 2);
+                            echo $cats; 
+                            ?></p>
                         </div>
                         <p><?php the_content(); ?></p>
                         <button>Read More</button>
@@ -65,7 +74,7 @@
             <div class='pagination'>
 
                 <?= paginate_links(array(
-                    'total' => $categories->max_num_pages
+                    'total' => $posts->max_num_pages
                 )); ?>
 
             </div>
@@ -76,6 +85,9 @@
             <?php
             $counter = 0;
             foreach (get_categories() as $x) {
+               if($x->name == 'Blog') {
+                    continue;
+                }
                 echo "<li>" . $x->name . " <input type='checkbox' value='" . $x->cat_ID . "' name='categoria" . ++$counter . "'></li>";
             }
             ?>

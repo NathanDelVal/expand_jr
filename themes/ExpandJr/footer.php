@@ -22,17 +22,17 @@ $recents = new WP_Query($args);
 
 <footer>
     <div class="principal">
-        <div class="frames">
+        <div class="frames display-md">
             <div class="frame a">
                 <p class="flashyText">Postagens Populares</p>
                 <div class="frame b">
                     <?php
-                    if( $popular->have_posts() ) {
-                        while( $popular->have_posts() ) {
+                    if ($popular->have_posts()) {
+                        while ($popular->have_posts()) {
                             $popular->the_post();
-                            ?>
+                    ?>
                             <a href="<?php the_permalink(); ?>"><?php the_content(); ?></a>
-                            <?php
+                    <?php
                         }
                     }
                     ?>
@@ -42,12 +42,12 @@ $recents = new WP_Query($args);
                 <p class="flashyText">Postagens Recentes</p>
                 <div class="frame b">
                     <?php
-                    if( $recents->have_posts() ) {
-                        while( $recents->have_posts() ) {
+                    if ($recents->have_posts()) {
+                        while ($recents->have_posts()) {
                             $recents->the_post();
-                            ?>
+                    ?>
                             <a href="<?php the_permalink(); ?>"><?php the_content(); ?></a>
-                            <?php
+                    <?php
                         }
                     }
                     ?>
@@ -98,4 +98,5 @@ $recents = new WP_Query($args);
 
 <?php wp_footer(); ?>
 </body>
+
 </html>

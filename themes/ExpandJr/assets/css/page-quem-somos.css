@@ -1,4 +1,12 @@
 /*** HEADER PAG QUEM SOMOS**/
+.quem-somos-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 .quem-somos-header{
     color: #fff;
     font-family: 'Barlow';
@@ -11,6 +19,8 @@
     height:300px;
     max-height: 300px;
     gap: 10px;
+    margin-top: 20px;
+    width:100%;
 }
 
 .qs-title{
@@ -37,24 +47,29 @@
 }
 .qs-secao1{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 66px;
-    height: 371px;
+    gap:66px;
+    height: 40%;
     font-family: 'Roboto';
 }
 
 .qs1_img{
-    width:583px;
-    height:371px;
+    
+    height:320px;
     background-color: #cac8c8;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .qs1-text-content{
     display: flex;
     flex-direction: column;
     font-size: 16px;
+    width:50%;
+    flex-wrap: wrap;
     font-weight: 400px;
     text-align: justify;
     gap: 15px;
